@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermarket Bill Generator</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Supermarket Bill Generator</h1>
+        <div class="form-group">
+            <label for="item">Item:</label>
+            <input type="text" id="item" placeholder="Enter item name">
+        </div>
+        <div class="form-group">
+            <label for="price">Price:</label>
+            <input type="number" id="price" placeholder="Enter item price" min="0">
+        </div>
+        <div class="form-group">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" placeholder="Enter quantity" min="1">
+        </div>
+        <button id="addItem">Add Item</button>
+        <button id="generateBill">Generate Bill</button>
+
+        <h2>Items</h2>
+        <table id="itemsTable">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <h2 id="totalBill">Total Bill: ₹0.00</h2>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
